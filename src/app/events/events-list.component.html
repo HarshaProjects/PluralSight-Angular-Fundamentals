@@ -1,6 +1,6 @@
 <div>
     <h1>Upcoming Angular Events</h1>
     <hr />
-    <event-thumbail [event] ="event1" (eventClick)='habndleEventClicked($event)' ></event-thumbail>
-    <div>{{outputFromChild}}</div>
+    <event-thumbail #thumbnailComponent [event] ="event1" ></event-thumbail>  
+    <div>{{thumbnailComponent.event.name}}</div>  
 </div>
