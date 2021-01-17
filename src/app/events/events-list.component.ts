@@ -23,7 +23,5 @@ export class EventsListComponent {
 
   habndleEventClicked(data: string) {
     console.log(data);
-
-    this.outputFromChild = data;
   }
 }
