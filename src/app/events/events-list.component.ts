@@ -19,7 +19,11 @@ export class EventsListComponent {
     },
   };
 
+  outputFromChild: string;
+
   habndleEventClicked(data: string) {
     console.log(data);
+
+    this.outputFromChild = data;
   }
 }
