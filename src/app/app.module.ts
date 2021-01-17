@@ -1,21 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { EventsAppComponent } from './events-app.component';
-import { EventsListComponent } from './events/events-list.component';
+import { EventsAppComponent } from "./events-app.component";
+import { EventsListComponent } from "./events/events-list.component";
+import { EventThumbanailComponent } from "./events/event-thumbnail.component";
 
 @NgModule({
   // Component, Pipe or Directive
   declarations: [
     EventsAppComponent,
-    EventsListComponent
+    EventsListComponent,
+    EventThumbanailComponent,
   ],
   // Other Modules
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   // Services
   providers: [],
-  bootstrap: [EventsAppComponent]
+  bootstrap: [EventsAppComponent],
 })
-export class AppModule { }
+export class AppModule {}
